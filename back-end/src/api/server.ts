@@ -1,4 +1,4 @@
-import CustomRouter from '../routes/Router';
+import CustomRouter from '../routes/CustomRouter';
 import App from './app';
 
 import TaskController from '../controllers/TaskController';
