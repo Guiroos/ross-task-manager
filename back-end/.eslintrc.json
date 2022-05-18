@@ -8,9 +8,9 @@
     },
     "extends": [
       "plugin:@typescript-eslint/recommended",
-      "airbnb-base",
       "plugin:editorconfig/noconflict",
       "plugin:mocha/recommended",
+      "airbnb-base",
       "airbnb-typescript/base"
     ],
     "parser": "@typescript-eslint/parser",
@@ -22,11 +22,18 @@
       }
     ],
     "parserOptions": {
+      "ecmaVersion": "2019",
       "project": "./tsconfig.json",
       "sourceType": "module"
     },
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {}
+    "plugins": ["@typescript-eslint", "editorconfig", "mocha"],
+    "rules": {
+      "no-underscore-dangle": "off",
+      "no-console": "off",
+      "camelcase": "warn",
+      "arrow-parens": [2, "always"],
+      "quotes": [2, "single"],
+      "implicit-arrow-linebreak": "off",
+      "consistent-return": "off"
+    }
   }
