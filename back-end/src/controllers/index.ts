@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ControllerErrors } from '../enums';
+import { ControllerErrors, Status } from '../enums';
 import Service from '../services';
 
 export type ResponseError = {
@@ -21,4 +21,17 @@ export default abstract class Controller<T> {
     req: RequestWithBody<T>,
     res: Response<T | ResponseError>,
   ): Promise<typeof res | void>;
+
+  read = async (
+    _req: Request,
+    res: Response<T[] | ResponseError>,
+  ): Promise<typeof res> => {
+    try {
+      const result = await this.service.read();
+      return res.status(Status.OK).json(result);
+    } catch (err) {
+      return res.status(Status.INTERNAL_SERVER_ERROR)
+        .json({ error: ControllerErrors.internal });
+    }
+  };
 }
