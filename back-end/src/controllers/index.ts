@@ -53,4 +53,9 @@ export default abstract class Controller<T> {
         .json({ error: ControllerErrors.internal });
     }
   };
+
+  abstract update(
+    req: RequestWithBody<T>,
+    res: Response<T | ResponseError>,
+  ): Promise<typeof res | void>;
 }
