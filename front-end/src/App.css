@@ -1,0 +1,14 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.tasks_list_container {
+  display: flex;
+}
