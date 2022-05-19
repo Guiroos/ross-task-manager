@@ -7,7 +7,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "start": "node dist/src/api/server.js",
+    "start": "node dist/src/api/index.js",
     "postinstall": "tsc",
     "dev": "ts-node-dev src/api/index.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
