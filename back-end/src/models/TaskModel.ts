@@ -10,6 +10,11 @@ export const TaskSchema = new Schema<TaskDocument>({
   status: String,
 }, { versionKey: false });
 
+// Referencia para voltar no JSON uma key id = https://stackoverflow.com/questions/7034848/mongodb-output-id-instead-of-id
+TaskSchema.set('toJSON', {
+  virtuals: true,
+});
+
 export default class TaskModel extends MongoModel<Task> {
   constructor(model = createModel('tasks', TaskSchema)) {
     super(model);
