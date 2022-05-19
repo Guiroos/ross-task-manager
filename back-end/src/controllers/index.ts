@@ -58,4 +58,9 @@ export default abstract class Controller<T> {
     req: RequestWithBody<T>,
     res: Response<T | ResponseError>,
   ): Promise<typeof res | void>;
+
+  abstract delete(
+    req: RequestWithBody<T>,
+    res: Response<T | ResponseError>,
+  ): Promise<typeof res | void>;
 }
