@@ -15,7 +15,10 @@ export default abstract class Controller<T> {
 
   protected errors = ControllerErrors;
 
-  constructor(protected service: Service<T>) { }
+  constructor(public service: Service<T>) { }
 
-  abstract create(req: RequestWithBody<T>, res: Response): Promise<typeof res | void>;
+  abstract create(
+    req: RequestWithBody<T>,
+    res: Response<T | ResponseError>,
+  ): Promise<typeof res | void>;
 }
