@@ -8,7 +8,7 @@ import { ControllerErrors, Status } from '../enums';
 class TaskController extends Controller<Task> {
   private _route: string;
 
-  constructor(service = new TaskService(), route = 'tasks') {
+  constructor(service = new TaskService(), route = '/tasks') {
     super(service);
     this._route = route;
   }
