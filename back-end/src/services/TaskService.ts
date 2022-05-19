@@ -14,6 +14,13 @@ class TaskService extends Service<Task> {
       return { error: parsed.error };
     } return this.model.create(data);
   };
+
+  update = async (id: string, data: Task): Promise<Task | null | ServiceError> => {
+    const parsed = TaskSchema.safeParse(data);
+    if (!parsed.success) {
+      return { error: parsed.error };
+    } return this.model.update(id, data);
+  };
 }
 
 export default TaskService;
