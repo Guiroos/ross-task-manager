@@ -1,5 +1,5 @@
 import { ZodError } from 'zod';
 
-export interface ServiceError {
+export default interface ServiceError {
   error: ZodError;
 }

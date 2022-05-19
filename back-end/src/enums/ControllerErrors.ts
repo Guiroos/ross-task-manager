@@ -5,4 +5,4 @@ enum ControllerErrors {
   badRequest = 'Bad request',
 }
 
-export default ControllerErrors;  
+export default ControllerErrors;

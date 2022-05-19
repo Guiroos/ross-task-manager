@@ -3,7 +3,7 @@ import { Model } from '../interfaces/ModelInterface';
 
 abstract class MongoModel<T> implements Model<T> {
   constructor(protected model: M<T & Document>) { }
-  
+
   create = async (data: T): Promise<T> => this.model.create({ ...data });
 
   read = async (): Promise<T[]> => this.model.find();
