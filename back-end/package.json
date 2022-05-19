@@ -1,8 +1,11 @@
 {
-  "name": "back-end",
+  "name": "ross-task-manager-back-end",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is the database with all the tasks that the user creates",
+  "main": "src/api/index.ts",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "dev": "ts-node-dev src/api/index.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -10,8 +13,13 @@
     "test:dev": "mocha -r ts-node/register src/tests/unit/**/*.test.ts --exit -t 60000",
     "test:coverage": "nyc npm run test:dev"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "task",
+    "manager",
+    "backend",
+    "database"
+  ],
+  "author": "guiroos",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
