@@ -7,4 +7,8 @@ export default abstract class Service<T> {
   public async create(data: T): Promise<T | null | ServiceError> {
     return this.model.create(data);
   }
+
+  public async read(): Promise<T[] | ServiceError> {
+    return this.model.read();
+  }
 }
