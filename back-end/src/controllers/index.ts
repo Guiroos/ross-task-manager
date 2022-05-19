@@ -34,4 +34,23 @@ export default abstract class Controller<T> {
         .json({ error: ControllerErrors.internal });
     }
   };
+
+  readOne = async (
+    req: Request,
+    res: Response<T | ResponseError>,
+  ): Promise<typeof res> => {
+    try {
+      const result = await this.service.readOne(req.params.id);
+      if (!result) {
+        return res.status(Status.NOT_FOUND).json({ error: ControllerErrors.notFound });
+      }
+      if ('error' in result) {
+        return res.status(Status.BAD_REQUEST).json({ error: ControllerErrors.invalidId });
+      }
+      return res.status(Status.OK).json(result);
+    } catch (err) {
+      return res.status(Status.INTERNAL_SERVER_ERROR)
+        .json({ error: ControllerErrors.internal });
+    }
+  };
 }
