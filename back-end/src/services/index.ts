@@ -1,5 +1,5 @@
 import { Model } from '../interfaces/ModelInterface';
-import { ServiceError } from '../interfaces/ServiceErrorInterface';
+import ServiceError from '../interfaces/ServiceErrorInterface';
 
 export default abstract class Service<T> {
   constructor(public model: Model<T>) { }
