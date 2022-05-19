@@ -1,6 +1,9 @@
 import express, { Router } from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
 import connectToDatabase from './connection';
+
+dotenv.config();
 
 class App {
   public app: express.Application;
@@ -11,7 +14,7 @@ class App {
     this.app.use(cors());
   }
 
-  public startServer(PORT: string | number = 3001): void {
+  public startServer(PORT: string | undefined = process.env.PORT): void {
     connectToDatabase();
     this.app.listen(
       PORT,
