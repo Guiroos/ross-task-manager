@@ -7,10 +7,11 @@ export interface TaskDocument extends Task, Document { }
 export const TaskSchema = new Schema<TaskDocument>({
   title: String,
   description: String,
-  status: String,
+  status: { type: String, default: 'Em progresso' },
   createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now },
-  deletedAt: { type: Date, default: null },
+  startedAt: { type: String, default: null },
+  finishedAt: { type: String, default: null },
+  deletedAt: { type: String, default: null },
 }, { versionKey: false });
 
 // Referencia para voltar no JSON uma key id = https://stackoverflow.com/questions/7034848/mongodb-output-id-instead-of-id
