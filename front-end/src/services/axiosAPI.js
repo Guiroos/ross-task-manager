@@ -1,10 +1,5 @@
 import axios from 'axios';
 
-// const PORT = 3001;
-// const hostName = process.env.REACT_APP_HOSTNAME || 'localhost';
-// const backPort = process.env.REACT_APP_BACKEND_PORT || PORT;
-
-// const appURL = `http://${hostName}:${backPort}`;
 const mongoURL = 'https://be-task-manager.herokuapp.com/';
 
 const api = axios.create({ baseURL: mongoURL });
