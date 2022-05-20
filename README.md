@@ -1,11 +1,11 @@
 
 # Ross Task Manager
 
-Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado
-em qualquer situação.
+Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.
 
-Ele possui integração front e back com banco de dados na nuvem.
+Possuindo integração front e back com banco de dados na nuvem.
 
+APLICAÇÃO HOSPEDADA -> [Ross Task Manager](https://ross-task-manager.netlify.app/)
 
 ## Instalação
 
@@ -56,9 +56,9 @@ Front-end
 ```
 ## Stacks utilizadas
 
-**Front-end:** React, Bootstrap
+**Front-end:** React, Bootstrap, ESLint.
 
-**Back-end:** Node, Express, Mongoose, TypeScript
+**Back-end:** Node, Express, Mongoose, TypeScript, ESLint.
 
 
 ## Roadmap
