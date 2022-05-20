@@ -1,1 +1,3 @@
-export { apiGet, apiPost, apiDelete } from './axiosAPI';
+export {
+  apiGet, apiPost, apiDelete, apiUpdate,
+} from './axiosAPI';
