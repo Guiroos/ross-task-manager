@@ -1,12 +1,8 @@
 import axios from 'axios';
 
-const PORT = 3001;
-const hostName = process.env.REACT_APP_HOSTNAME || 'localhost';
-const backPort = process.env.REACT_APP_BACKEND_PORT || PORT;
+const mongoURL = 'https://be-task-manager.herokuapp.com/';
 
-const appURL = `http://${hostName}:${backPort}`;
-
-const api = axios.create({ baseURL: appURL });
+const api = axios.create({ baseURL: mongoURL });
 
 export const apiGet = async (url) => api.get(url);
 
