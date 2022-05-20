@@ -17,7 +17,7 @@ export default function TaskForm({ changeButton }) {
     defaultValues: {
       title: '',
       description: '',
-      status: '',
+      status: 'Em progresso',
     },
   }, []);
 
@@ -49,20 +49,6 @@ export default function TaskForm({ changeButton }) {
           {...register('description', { required: true })}
         />
         {errors.description && <div>{errors.description.message}</div>}
-      </Form.Group>
-      <Form.Group controlId="formTaskStatus">
-        <Form.Label>Status</Form.Label>
-        <Form.Control
-          as="select"
-          name="status"
-          {...register('status', { required: true })}
-        >
-          <option value="">Select</option>
-          <option value="Aberta">Aberta</option>
-          <option value="Em progresso">Em progresso</option>
-          <option value="Concluída">Concluída</option>
-        </Form.Control>
-        {errors.status && <div>{errors.status.message}</div>}
       </Form.Group>
       <Form.Group>
         <Button variant="primary" type="submit" disabled={!isValid}>
