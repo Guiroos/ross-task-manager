@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node dist/src/api/index.js",
-    "postinstall": "tsc",
+    "postinstall": "tsc && npm prune",
     "dev": "ts-node-dev src/api/index.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest -i --forceExit --verbose",
