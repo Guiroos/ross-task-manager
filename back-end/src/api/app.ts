@@ -12,10 +12,10 @@ class App {
   constructor() {
     this.app = express();
     this.app.use(express.json());
-    this.app.use(express.static(path.join(__dirname, '../../../front-end/build')));
+    this.app.use(express.static(path.join(__dirname, '../../../build')));
     this.app.use(cors());
     this.app.get('/', (_req, res) => {
-      res.sendFile(path.join(__dirname, '../../../front-end/build', 'index.html'));
+      res.sendFile(path.join(__dirname, '../../../build', 'index.html'));
     });
   }
 
