@@ -23,7 +23,7 @@ class App {
     connectToDatabase();
     this.app.listen(
       PORT,
-      () => console.log('Server running on MondoDB'),
+      () => console.log(`Server running on MondoDB: ${PORT}`),
     );
   }
 
