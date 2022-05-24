@@ -4,9 +4,10 @@
   "description": "Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.",
   "private": true,
   "scripts": {
-    "install": "sh ./scripts/preStartFE.sh && sh ./scripts/preStartBE.sh",
+    "install": "sh ./scripts/install.sh",
     "start": "sh ./scripts/startNode.sh",
-    "build": "sh ./scripts/startBuild.sh"
+    "build": "sh ./scripts/startBuild.sh",
+    "prune": "sh ./scripts/prune.sh"
   },
   "repository": {
     "type": "git",

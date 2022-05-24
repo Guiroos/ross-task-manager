@@ -18,7 +18,7 @@ class App {
     connectToDatabase();
     this.app.listen(
       PORT,
-      () => console.log('Server running on https://be-ross-task-manager.herokuapp.com'),
+      () => console.log('Server running on MondoDB'),
     );
   }
 
