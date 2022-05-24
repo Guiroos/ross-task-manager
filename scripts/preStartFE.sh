@@ -1,6 +1,6 @@
 printf "\n>Installing dependencies\n"
 
-cd ./fron-tend
+cd ./front-end
 npm install
 npm build
 
