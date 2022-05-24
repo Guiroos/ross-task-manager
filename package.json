@@ -4,10 +4,8 @@
   "description": "Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.",
   "main": "index.js",
   "scripts": {
-    "start": "sh ./scripts/preStartFE.sh && sh ./scripts/preStartBE.sh",
-    "preStartBE": "sh ./scripts/preStartBE.sh",
-    "preStartFE": "sh ./scripts/preStartFE.sh",
-    "stop": "(pm2 stop all && pm2 delete all) | grep 'PM2'"
+    "install": "sh ./scripts/preStartFE.sh && sh ./scripts/preStartBE.sh",
+    "start": "node back-end/dist/src/api/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/Guiroos/ross-task-manager/issues"
   },
-  "homepage": "https://github.com/Guiroos/ross-task-manager#readme",
-  "dependencies": {
-    "pm2": "^5.2.0"
-  }
+  "homepage": "https://github.com/Guiroos/ross-task-manager#readme"
 }
