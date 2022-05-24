@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node dist/src/api/index.js",
-    "postinstall": "tsc && npm prune",
+    "postinstall": "tsc && npm prune --production",
     "dev": "ts-node-dev src/api/index.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest -i --forceExit --verbose",
@@ -54,8 +54,8 @@
     "mocha": "^10.0.0",
     "nyc": "^15.1.0",
     "sinon": "^14.0.0",
-    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "ts-node": "^10.7.0"
   }
 }
