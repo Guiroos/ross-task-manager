@@ -1,6 +1,6 @@
 printf "\n>Installing dependencies\n"
 
 cd ./back-end
-npm install ci
+npm ci
 
 printf "\n>Done\n"

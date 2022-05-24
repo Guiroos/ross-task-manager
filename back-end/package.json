@@ -1,6 +1,6 @@
 {
   "name": "ross-task-manager-back-end",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is the database with all the tasks that the user creates",
   "main": "src/api/index.ts",
   "engines": {
@@ -54,8 +54,8 @@
     "mocha": "^10.0.0",
     "nyc": "^15.1.0",
     "sinon": "^14.0.0",
+    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.6.4",
-    "ts-node": "^10.7.0"
+    "typescript": "^4.6.4"
   }
 }
