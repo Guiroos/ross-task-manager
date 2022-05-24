@@ -4,8 +4,10 @@
   "description": "Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.",
   "main": "index.js",
   "scripts": {
+    "start": "sh ./scripts/preStartBE.sh && sh ./scripts/preStartFE.sh",
     "preStartBE": "sh ./scripts/preStartBE.sh",
-    "preStartFE": "sh ./scripts/preStartFE.sh"
+    "preStartFE": "sh ./scripts/preStartFE.sh",
+    "stop": "(pm2 stop all && pm2 delete all) | grep 'PM2'"
   },
   "repository": {
     "type": "git",

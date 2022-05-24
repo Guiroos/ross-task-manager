@@ -1,7 +1,6 @@
 printf "\n>Installing dependencies\n"
 
-cd ./backend
+cd ./back-end
 npm install
-npm run dev
 
 printf "\n>Done\n"
