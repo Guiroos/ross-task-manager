@@ -1,6 +1,6 @@
 printf "\n>Installing dependencies\n"
 
 cd ./front-end
-npm ci
+npm install --prefer-dedupe
 
 printf "\n>Done\n"
