@@ -4,7 +4,7 @@
   "description": "Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.",
   "main": "index.js",
   "scripts": {
-    "start": "sh ./scripts/preStartBE.sh && sh ./scripts/preStartFE.sh",
+    "start": "sh ./scripts/preStartFE.sh && sh ./scripts/preStartBE.sh",
     "preStartBE": "sh ./scripts/preStartBE.sh",
     "preStartFE": "sh ./scripts/preStartFE.sh",
     "stop": "(pm2 stop all && pm2 delete all) | grep 'PM2'"
