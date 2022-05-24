@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "install": "sh ./scripts/preStartFE.sh && sh ./scripts/preStartBE.sh",
-    "start": "node back-end/dist/src/api/index.js"
+    "start": "sh ./scripts/startNode.sh",
+    "build": "sh ./scripts/startBuild.sh"
   },
   "repository": {
     "type": "git",
