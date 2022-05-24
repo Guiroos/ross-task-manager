@@ -2,7 +2,7 @@
   "name": "ross-task-manager",
   "version": "1.0.0",
   "description": "Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "install": "sh ./scripts/preStartFE.sh && sh ./scripts/preStartBE.sh",
     "start": "sh ./scripts/startNode.sh",
