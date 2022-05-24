@@ -1,6 +1,6 @@
 printf "\n>Installing dependencies\n"
 
 cd ./front-end
-npm install
+npm install --production
 
 printf "\n>Done\n"
