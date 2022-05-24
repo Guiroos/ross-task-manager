@@ -1,0 +1,24 @@
+{
+  "name": "ross-task-manager",
+  "version": "1.0.0",
+  "description": "Projeto (em desenvolvimento) de gestão de atividades, podendo ser implementado em qualquer situação.",
+  "main": "index.js",
+  "scripts": {
+    "preStartBE": "sh ./scripts/preStartBE.sh",
+    "preStartFE": "sh ./scripts/preStartFE.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guiroos/ross-task-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guiroos/ross-task-manager/issues"
+  },
+  "homepage": "https://github.com/Guiroos/ross-task-manager#readme",
+  "dependencies": {
+    "pm2": "^5.2.0"
+  }
+}
