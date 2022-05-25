@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcf222fb-05d0-40b6-98f0-c73694430e7d/deploy-status)](https://app.netlify.com/sites/ross-task-manager/deploys)
 
 # Ross Task Manager
 
